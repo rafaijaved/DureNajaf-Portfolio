@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutritionist</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="#top" class="logo">Dur E Najaf</a>
+        <div class="menu" id="menu">
+          <a href="#top">Home</a>
+          <a href="#owner-section">About</a>
+          <a href="#plans-section">Plans</a>
+          <a href="#contact-section">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">☰</div>
+      </div>
+    </nav>
+    <section class="hero-section" id="top">
+      <div class="hero-grid">
+        <h1>
+          I am Dur E Najaf, <br />
+          your nutritionist
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <a href="#" class="hero-btn">Browse plans</a>
+        <a href="#" class="hero-btn">Contact me</a>
+      </div>
+      <div class="hero-img">
+        <img src="./Assets/Asset 1.JPG" alt="" />
+      </div>
+    </section>
+    <section class="owner-section" id="owner-section">
+      <div class="container">
+        <div class="owner-content">
+          <div class="owner-image">
+            <img src="./Assets/asset.jpg" alt="Owner's Image" />
+            <!-- Replace with your image path -->
+          </div>
+          <div class="owner-info">
+            <h2>About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
+              lorem imperdiet.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
+              lorem imperdiet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Nutrition Plans Section -->
+    <section class="plans-section" id="plans-section">
+      <div class="container">
+        <h2>Nutrition plans</h2>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat aute irure dolor in
+          reprehenderit.
+        </p>
+
+        <!-- Cards -->
+        <div class="cards">
+          <!-- Basic Plan -->
+          <div class="card">
+            <img src="./Assets/asset 3.png" alt="Basic Plan Image" />
+            <p class="price">$ 99.00 USD</p>
+            <ul>
+              <li>1 session</li>
+              <li>Monthly diet</li>
+              <li>Nutrition schedule</li>
+              <li>Email follow up</li>
+            </ul>
+          </div>
+
+          <!-- Plus Plan -->
+          <div class="card">
+            <img src="./Assets/asset 2.png" alt="Plus Plan Image" />
+            <p class="price">$ 199.00 USD</p>
+            <ul>
+              <li>2 sessions</li>
+              <li>Bimonthly diet</li>
+              <li>Grocery list</li>
+              <li>Chat follow up</li>
+            </ul>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="card">
+            <img src="./Assets/asset 5.png" alt="Premium Plan Image" />
+            <p class="price">$ 299.00 USD</p>
+            <ul>
+              <li>4 sessions</li>
+              <li>Weekly diet</li>
+              <li>Food delivery</li>
+              <li>App follow up</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>Are you ready to take the first step?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+            <a href="#" class="hero-btn">Contact me</a>
+          </div>
+          <div class="contact-image">
+            <img src="./Assets/asset 16.png" alt="Contact Image" />
+            <!-- Replace with your image path -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Follow me on Socials</h3>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat aute irure.
+            </p>
+            <a href="#" class="instagram-link">@durenajaf</a>
+          </div>
+          <div class="footer-section">
+            <h3 class="logo">Dur E Najaf</h3>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat aute irure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
