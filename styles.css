@@ -195,7 +195,11 @@ h3 {
 
 .owner-image img {
   width: 120%;
-  border-radius: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 /* Food Section */
@@ -323,8 +327,6 @@ h3 {
   text-decoration: underline;
 }
 
-/* ... [The previous CSS remains unchanged up to the media queries] ... */
-
 /* Media Queries */
 
 /* Mobile devices */
@@ -332,6 +334,11 @@ h3 {
   .navbar-container {
     flex-direction: row;
     justify-content: space-between;
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
   }
 
   .menu {
@@ -351,16 +358,28 @@ h3 {
     color: #333;
   }
 
-  .hero-section,
-  .owner-section {
+  .hero-section {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    padding: 3rem 0;
+    height: auto;
   }
 
   .hero-grid,
   .owner-info {
     width: 100%;
     text-align: center;
+  }
+
+  .hero-grid h1 {
+    font-size: 2.5rem;
+    line-height: 40px;
+    margin-bottom: 18px;
+  }
+
+  .hero-grid p {
+    font-size: 18px;
   }
 
   .hero-img,
@@ -370,13 +389,34 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    width: 100%;
   }
 
-  .hero-img img,
-  .owner-image img,
-  .contact-image img {
-    width: 100%;
-    max-width: 300px;
+  .owner-image img {
+    max-width: 340px;
+  }
+
+  .owner-section {
+    height: auto;
+  }
+
+  .owner-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .owner-info h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+
+  .plans-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .plans-section p {
+    font-size: 18px;
   }
 
   .cards {
@@ -388,42 +428,143 @@ h3 {
     width: 100%;
     margin-bottom: 20px;
   }
+
+  .card img {
+    margin: 0;
+  }
+
+  .contact-info h2,
+  .contact-info p,
+  .contact-info a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-info h2 {
+    font-size: 3rem;
+    line-height: 55px;
+  }
+
+  .contact-info p {
+    font-size: 18px;
+  }
+
+  .contact-image {
+    display: none;
+  }
 }
 
 /* Tablets */
 @media (min-width: 577px) and (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem 0;
+    height: auto;
+    width: 100%;
+  }
+
+  .hero-grid,
+  .owner-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-grid h1 {
+    font-size: 4rem;
+  }
+
+  .hero-grid p {
+    font-size: 28px;
+  }
+
+  .hero-img,
+  .owner-image,
+  .contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .owner-image img {
+    max-width: 100%;
+  }
+
+  .owner-section {
+    height: auto;
+  }
+
   .owner-content,
   .contact-content {
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  .owner-image,
-  .contact-image {
-    margin-bottom: 20px;
+  .owner-info h2 {
+    margin: 0;
+    font-size: 4rem;
+    margin: 20px 0;
+  }
+
+  .owner-info p {
+    font-size: 28px;
+  }
+
+  .plans-section h2 {
+    font-size: 4rem;
+  }
+
+  .plans-section p {
+    font-size: 28px;
   }
 
   .cards {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: ;
+    align-items: center;
+  }
+
+  .card img {
+    margin: 0;
   }
 
   .card {
-    width: 48%;
+    width: 100%;
     margin-bottom: 20px;
+    font-size: 2rem;
   }
 
-  .hero-grid {
-    width: 70%;
-  }
-
-  .hero-img img {
-    width: 80%;
+  .card p {
+    font-size: 2.5rem;
   }
 }
 
 /* Small laptops */
 @media (min-width: 769px) and (max-width: 992px) {
+  .hero-section,
+  .owner-section {
+    height: auto;
+    padding: 8rem 0;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
+  .hero-section p {
+    font-size: 22px;
+  }
+
   .cards {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -438,8 +579,26 @@ h3 {
     width: 60%;
   }
 
-  .hero-img img {
-    width: 85%;
+  .hero-img img,
+  .owner-image img {
+    width: 350px;
+  }
+
+  .owner-image {
+    max-width: 50%;
+  }
+
+  .owner-info h2 {
+    margin: 0;
+  }
+
+  .contact-info h2 {
+    font-size: 3rem;
+    line-height: 55px;
+  }
+
+  .contact-info p {
+    font-size: 22px;
   }
 }
 
